@@ -2,10 +2,25 @@
 <html>
 	<head>
 		<title>Darren Hill, Voice Actor - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="player.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/dark-hive/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<h1>Darren Hill, Voice Actor</h1>
-		<h2>Portfolio of audio samples</h2>
-		<audio src="EBS_Test.mp3" controls />
+		<div class="spanner-row flex-row">
+			<span class="flex-shrink-1" /></span>
+			<span class="spanner-cell">
+				<div class="page-title">Darren Hill, Voice Actor</div>
+				<div class="toggle-row flex-row">
+					<span class="toggle-cell flex-shrink-1"></span>
+					<span class="player-cell"><div id="player"></div></span>
+				</div>
+			</span>
+			<span class="flex-shrink-1"></span>
+		</div>
 	</body>
 </html>

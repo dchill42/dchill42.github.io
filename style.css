@@ -1,0 +1,66 @@
+body { background-color: #000000; }
+
+.flex-row {
+  align-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.flex-grow-1 { flex-grow: 1 }
+.flex-shrink-1 { flex-shrink: 1 }
+
+.spanner-cell { background-image: url('background.jpg'); flex-basis: 750px; min-height: 1333px; }
+.toggle-cell { flex-basis: 300px; }
+
+.ui-button .ui-icon { margin-top: 1px; }
+
+.page-title {
+  color: #ffffff;
+  font-family: 'Copperplate Gothic', Georgia, serif;
+  font-size: 28pt;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.player-panel {
+  background-color: #222222;
+  padding: 0.5em;
+  margin: 150px 0 0 50px;
+  opacity: 0.95;
+  width: 400px;
+}
+.player-title { margin: 0; padding: 0.25em; text-align: center; }
+.player-form { display: none; }
+.player-all-box { padding-bottom: 3px; }
+.player-controls { margin: 1em 0; }
+.player-play-all { border-radius: 16px; font-size: 10pt; padding: 0 10px 6px; }
+.player-play-all--playing { border-color: rgb(11, 147, 213); }
+.player-play-all span { color: #ffffff; font-size: 10pt; }
+.player-play-all .ui-icon { margin-right: 0.25em; }
+.player-total { margin-left: 0.5em; }
+.player-play-all--playing .player-all-text, .player-play-all--playing .player-total { display: none; }
+.player-stop-text { display: none; }
+.player-play-all--playing .player-stop-text { display: initial; }
+
+.player-up-box, .player-down-box { flex-basis: 28px; }
+.player-up-box { text-align: right; }
+.player-vol-box { min-width: 180px; }
+.player-list { margin: 0; padding: 0; }
+
+.track-item { list-style-type: none; }
+.track-play { padding: .4em; text-align: left; width: 100%; }
+.track-play .ui-icon { margin-right: 0.5em; visibility: hidden; }
+.track-play:hover .ui-icon, .track-play--playing .ui-icon { visibility: visible; }
+.track-play--playing { border-color: rgb(11, 147, 213); }
+.track-time { color: #ffffff; font-size: 12pt; }
+.track-label { min-width: 200px; }
+.track-clock { text-align: right; }
+.track-separator { padding: 0 0.5em; }
+.track-total { margin-right: 0.25em; }
+.track-time--play { visibility: hidden; }
+.track-play--playing .track-time--play { visibility: visible; }
+.track-dlbox { margin-left: 1em; }
+.track-download { padding: 0.4em 0.5em; }
+.track-play.ui-corner-all, .track-download.ui-corner-all { border-radius: 18px; }
