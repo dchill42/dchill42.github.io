@@ -218,7 +218,6 @@ class Player {
     this.$element.addClass('player-panel ui-widget ui-corner-all').appendTo(root);
     this.$title.addClass('player-title ui-widget ui-widget-header ui-corner-all')
       .text('Portfolio of audio samples').appendTo(this.$element);
-    $('<div style="color: white">').text(`Width: ${window.innerWidth}px`).appendTo(this.$element);
     this.$audio.appendTo(this.$element);
     this._controls.build({ panel: this.$element, playAll: this.playAll, setVolume: this.setVolume });
     this.$list.addClass('player-list').appendTo(this.$element);

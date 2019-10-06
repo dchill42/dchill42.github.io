@@ -1,4 +1,4 @@
-body { background-color: #000000; }
+body { background-color: #030d16; margin: 0; }
 
 .flex-row {
   align-content: flex-start;
@@ -11,8 +11,13 @@ body { background-color: #000000; }
 .flex-grow-1 { flex-grow: 1 }
 .flex-shrink-1 { flex-shrink: 1 }
 
-.spanner-cell { background-image: url('background.jpg'); flex-basis: 750px; min-height: 1333px; }
-.toggle-cell { flex-basis: 300px; }
+.spanner-cell {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  flex-basis: 687px;
+  min-height: 1097px;
+}
+.toggle-cell { flex-basis: 275px; }
 
 .ui-button .ui-icon { margin-top: 1px; }
 
@@ -27,9 +32,9 @@ body { background-color: #000000; }
 .player-panel {
   background-color: #222222;
   padding: 0.5em;
-  margin: 150px 0 0 50px;
+  margin: 150px 0 0;
   opacity: 0.95;
-  width: 400px;
+  width: 370px;
 }
 .player-title { margin: 0; padding: 0.25em; text-align: center; }
 .player-form { display: none; }
@@ -46,7 +51,7 @@ body { background-color: #000000; }
 
 .player-up-box, .player-down-box { flex-basis: 28px; }
 .player-up-box { text-align: right; }
-.player-vol-box { min-width: 180px; }
+.player-vol-box { min-width: 160px; }
 .player-list { margin: 0; padding: 0; }
 
 .track-item { list-style-type: none; }
@@ -54,8 +59,10 @@ body { background-color: #000000; }
 .track-play .ui-icon { margin-right: 0.5em; visibility: hidden; }
 .track-play:hover .ui-icon, .track-play--playing .ui-icon { visibility: visible; }
 .track-play--playing { border-color: rgb(11, 147, 213); }
-.track-time { color: #ffffff; font-size: 12pt; }
-.track-label { min-width: 200px; }
+.track-time { color: #ffffff; }
+.track-label { font-weight: bold; min-width: 180px; }
+.track-time,
+.track-label { font-size: 10pt; line-height: 1.7; }
 .track-clock { text-align: right; }
 .track-separator { padding: 0 0.5em; }
 .track-total { margin-right: 0.25em; }
